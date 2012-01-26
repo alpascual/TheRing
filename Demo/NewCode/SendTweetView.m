@@ -44,6 +44,20 @@
     // Share the item    
     [SHKTwitter shareItem:item];*/
     
+    if ( Username == nil || Username.length == 0 )
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:[NSString stringWithFormat:@"You need to set up a twitter user"]
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"                                          
+                                              otherButtonTitles:nil];
+        
+        [alert show];
+        
+        return;
+    }
+    
+    
     user.text = Username;
     
     // grab a count
