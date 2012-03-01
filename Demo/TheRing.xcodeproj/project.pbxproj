@@ -10,12 +10,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		76840207140C8EBC0076EF8F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 76840202140C8EBC0076EF8F /* Icon-72.png */; };
-		76840208140C8EBC0076EF8F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 76840203140C8EBC0076EF8F /* Icon.png */; };
-		76840209140C8EBC0076EF8F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76840204140C8EBC0076EF8F /* Icon@2x.png */; };
-		7684020A140C8EBC0076EF8F /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 76840205140C8EBC0076EF8F /* Icon512.png */; };
-		7684020B140C8EBC0076EF8F /* IconBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 76840206140C8EBC0076EF8F /* IconBig.png */; };
-		7684020E140C8F410076EF8F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7684020D140C8F410076EF8F /* Default.png */; };
 		768A325F142FCB35000744B5 /* UserList.m in Sources */ = {isa = PBXBuildFile; fileRef = 768A325D142FCB35000744B5 /* UserList.m */; };
 		768A3260142FCB35000744B5 /* UserList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 768A325E142FCB35000744B5 /* UserList.xib */; };
 		76A3062514098D5C009D40D4 /* SendTweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A3062014098D5C009D40D4 /* SendTweetView.m */; };
@@ -25,6 +19,14 @@
 		76A3062E14099380009D40D4 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A3062D14099380009D40D4 /* iAd.framework */; };
 		76A3063A140B30EE009D40D4 /* FinishedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A30638140B30EE009D40D4 /* FinishedView.m */; };
 		76A3063B140B30EE009D40D4 /* FinishedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A30639140B30EE009D40D4 /* FinishedView.xib */; };
+		76AC51F014EDFCA200E96A3C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51E714EDFCA200E96A3C /* Default.png */; };
+		76AC51F114EDFCA200E96A3C /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51E814EDFCA200E96A3C /* Icon-72.png */; };
+		76AC51F214EDFCA200E96A3C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51E914EDFCA200E96A3C /* Icon.png */; };
+		76AC51F314EDFCA200E96A3C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51EA14EDFCA200E96A3C /* Icon@2x.png */; };
+		76AC51F414EDFCA200E96A3C /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51EB14EDFCA200E96A3C /* Icon512.png */; };
+		76AC51F514EDFCA200E96A3C /* IconBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51EC14EDFCA200E96A3C /* IconBig.png */; };
+		76AC51F614EDFCA200E96A3C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51ED14EDFCA200E96A3C /* MainWindow.xib */; };
+		76AC51F714EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51EE14EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib */; };
 		B539A9ED1019C58200401088 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B539A9EC1019C58200401088 /* libxml2.dylib */; };
 		B54ED4A41135F10F0095DD71 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B54ED4791135F10F0095DD71 /* MGTwitterEngine.m */; };
 		B54ED4A51135F10F0095DD71 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B54ED47D1135F10F0095DD71 /* MGTwitterHTTPURLConnection.m */; };
@@ -43,8 +45,6 @@
 		B5901B8E101A291A00CF32FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5901B88101A291A00CF32FA /* main.m */; };
 		B5901B8F101A291A00CF32FA /* OAuthTwitterDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5901B8B101A291A00CF32FA /* OAuthTwitterDemoAppDelegate.m */; };
 		B5901B90101A291A00CF32FA /* OAuthTwitterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5901B8D101A291A00CF32FA /* OAuthTwitterDemoViewController.m */; };
-		B5901B94101A294400CF32FA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5901B91101A294400CF32FA /* MainWindow.xib */; };
-		B5901B96101A294400CF32FA /* OAuthTwitterDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5901B93101A294400CF32FA /* OAuthTwitterDemoViewController.xib */; };
 		B5BC1F86101A36F0009820BB /* SA_OAuthTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BC1F83101A36F0009820BB /* SA_OAuthTwitterEngine.m */; };
 		B5BC1F87101A36F0009820BB /* SA_OAuthTwitterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BC1F85101A36F0009820BB /* SA_OAuthTwitterController.m */; };
 		B5BC2313101A63F2009820BB /* libOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BC2312101A63F2009820BB /* libOAuth.a */; };
@@ -55,12 +55,6 @@
 		1D6058910D05DD3D006BFB54 /* TheRing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheRing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		76840202140C8EBC0076EF8F /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Rsc/Icon-72.png"; sourceTree = "<group>"; };
-		76840203140C8EBC0076EF8F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Rsc/Icon.png; sourceTree = "<group>"; };
-		76840204140C8EBC0076EF8F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Rsc/Icon@2x.png"; sourceTree = "<group>"; };
-		76840205140C8EBC0076EF8F /* Icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon512.png; path = Rsc/Icon512.png; sourceTree = "<group>"; };
-		76840206140C8EBC0076EF8F /* IconBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconBig.png; path = Rsc/IconBig.png; sourceTree = "<group>"; };
-		7684020D140C8F410076EF8F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Rsc/Default.png; sourceTree = "<group>"; };
 		768A325C142FCB35000744B5 /* UserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserList.h; sourceTree = "<group>"; };
 		768A325D142FCB35000744B5 /* UserList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserList.m; sourceTree = "<group>"; };
 		768A325E142FCB35000744B5 /* UserList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserList.xib; sourceTree = "<group>"; };
@@ -74,6 +68,15 @@
 		76A30637140B30EE009D40D4 /* FinishedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishedView.h; sourceTree = "<group>"; };
 		76A30638140B30EE009D40D4 /* FinishedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishedView.m; sourceTree = "<group>"; };
 		76A30639140B30EE009D40D4 /* FinishedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinishedView.xib; sourceTree = "<group>"; };
+		76AC51E714EDFCA200E96A3C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		76AC51E814EDFCA200E96A3C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
+		76AC51E914EDFCA200E96A3C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
+		76AC51EA14EDFCA200E96A3C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
+		76AC51EB14EDFCA200E96A3C /* Icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon512.png; path = Resources/Icon512.png; sourceTree = "<group>"; };
+		76AC51EC14EDFCA200E96A3C /* IconBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconBig.png; path = Resources/IconBig.png; sourceTree = "<group>"; };
+		76AC51ED14EDFCA200E96A3C /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
+		76AC51EE14EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OAuthTwitterDemoViewController.xib; path = Resources/OAuthTwitterDemoViewController.xib; sourceTree = "<group>"; };
+		76AC51EF14EDFCA200E96A3C /* TheRing-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TheRing-Info.plist"; path = "Resources/TheRing-Info.plist"; sourceTree = "<group>"; };
 		B539A9EC1019C58200401088 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B54ED4781135F10F0095DD71 /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngine.h; sourceTree = "<group>"; };
 		B54ED4791135F10F0095DD71 /* MGTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterEngine.m; sourceTree = "<group>"; };
@@ -128,9 +131,6 @@
 		B5901B8B101A291A00CF32FA /* OAuthTwitterDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthTwitterDemoAppDelegate.m; sourceTree = "<group>"; };
 		B5901B8C101A291A00CF32FA /* OAuthTwitterDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthTwitterDemoViewController.h; sourceTree = "<group>"; };
 		B5901B8D101A291A00CF32FA /* OAuthTwitterDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthTwitterDemoViewController.m; sourceTree = "<group>"; };
-		B5901B91101A294400CF32FA /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Rsc/MainWindow.xib; sourceTree = "<group>"; };
-		B5901B92101A294400CF32FA /* TheRing-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TheRing-Info.plist"; path = "Rsc/TheRing-Info.plist"; sourceTree = "<group>"; };
-		B5901B93101A294400CF32FA /* OAuthTwitterDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OAuthTwitterDemoViewController.xib; path = Rsc/OAuthTwitterDemoViewController.xib; sourceTree = "<group>"; };
 		B5BC1F82101A36F0009820BB /* SA_OAuthTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SA_OAuthTwitterEngine.h; sourceTree = "<group>"; };
 		B5BC1F83101A36F0009820BB /* SA_OAuthTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SA_OAuthTwitterEngine.m; sourceTree = "<group>"; };
 		B5BC1F84101A36F0009820BB /* SA_OAuthTwitterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SA_OAuthTwitterController.h; sourceTree = "<group>"; };
@@ -181,15 +181,15 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7684020D140C8F410076EF8F /* Default.png */,
-				76840202140C8EBC0076EF8F /* Icon-72.png */,
-				76840203140C8EBC0076EF8F /* Icon.png */,
-				76840204140C8EBC0076EF8F /* Icon@2x.png */,
-				76840205140C8EBC0076EF8F /* Icon512.png */,
-				76840206140C8EBC0076EF8F /* IconBig.png */,
-				B5901B91101A294400CF32FA /* MainWindow.xib */,
-				B5901B92101A294400CF32FA /* TheRing-Info.plist */,
-				B5901B93101A294400CF32FA /* OAuthTwitterDemoViewController.xib */,
+				76AC51E714EDFCA200E96A3C /* Default.png */,
+				76AC51E814EDFCA200E96A3C /* Icon-72.png */,
+				76AC51E914EDFCA200E96A3C /* Icon.png */,
+				76AC51EA14EDFCA200E96A3C /* Icon@2x.png */,
+				76AC51EB14EDFCA200E96A3C /* Icon512.png */,
+				76AC51EC14EDFCA200E96A3C /* IconBig.png */,
+				76AC51ED14EDFCA200E96A3C /* MainWindow.xib */,
+				76AC51EE14EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib */,
+				76AC51EF14EDFCA200E96A3C /* TheRing-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TheRing" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -378,18 +378,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5901B94101A294400CF32FA /* MainWindow.xib in Resources */,
-				B5901B96101A294400CF32FA /* OAuthTwitterDemoViewController.xib in Resources */,
 				76A3062614098D5C009D40D4 /* SendTweetView.xib in Resources */,
 				76A3062814098D5C009D40D4 /* ThankYouView.xib in Resources */,
 				76A3063B140B30EE009D40D4 /* FinishedView.xib in Resources */,
-				76840207140C8EBC0076EF8F /* Icon-72.png in Resources */,
-				76840208140C8EBC0076EF8F /* Icon.png in Resources */,
-				76840209140C8EBC0076EF8F /* Icon@2x.png in Resources */,
-				7684020A140C8EBC0076EF8F /* Icon512.png in Resources */,
-				7684020B140C8EBC0076EF8F /* IconBig.png in Resources */,
-				7684020E140C8F410076EF8F /* Default.png in Resources */,
 				768A3260142FCB35000744B5 /* UserList.xib in Resources */,
+				76AC51F014EDFCA200E96A3C /* Default.png in Resources */,
+				76AC51F114EDFCA200E96A3C /* Icon-72.png in Resources */,
+				76AC51F214EDFCA200E96A3C /* Icon.png in Resources */,
+				76AC51F314EDFCA200E96A3C /* Icon@2x.png in Resources */,
+				76AC51F414EDFCA200E96A3C /* Icon512.png in Resources */,
+				76AC51F514EDFCA200E96A3C /* IconBig.png in Resources */,
+				76AC51F614EDFCA200E96A3C /* MainWindow.xib in Resources */,
+				76AC51F714EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,9 +443,9 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Src/TheRing_Prefix.pch;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
-				INFOPLIST_FILE = "Rsc/TheRing-Info.plist";
+				INFOPLIST_FILE = "Resources/TheRing-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,9 +473,9 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Src/TheRing_Prefix.pch;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
-				INFOPLIST_FILE = "Rsc/TheRing-Info.plist";
+				INFOPLIST_FILE = "Resources/TheRing-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,9 +516,9 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Src/TheRing_Prefix.pch;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
-				INFOPLIST_FILE = "Rsc/TheRing-Info.plist";
+				INFOPLIST_FILE = "Resources/TheRing-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

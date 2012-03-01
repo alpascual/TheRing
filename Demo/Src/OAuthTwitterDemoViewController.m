@@ -10,8 +10,10 @@
 #import "SA_OAuthTwitterEngine.h"
 
 
-#define kOAuthConsumerKey				@"cmU4OoYsh1QODUePBSWsug"		//REPLACE ME
-#define kOAuthConsumerSecret			@"kD7wqsZgZOHRW65x9biqLuWPqEKavAQbvSwqCNgT8"		//REPLACE ME
+//#define kOAuthConsumerKey				@"cmU4OoYsh1QODUePBSWsug"		//REPLACE ME
+//#define kOAuthConsumerSecret			@"kD7wqsZgZOHRW65x9biqLuWPqEKavAQbvSwqCNgT8"		//REPLACE ME
+#define kOAuthConsumerKey	@"yASjbX9Zbu1OD0gk89qExA"
+#define kOAuthConsumerSecret @"mTDH5xPm6Fu1KS3m1NUVTWKXBXi330TCakspt5Dz060"	
 
 @implementation OAuthTwitterDemoViewController
 
@@ -87,7 +89,12 @@
 	
 	UIViewController			*controller = [SA_OAuthTwitterController controllerToEnterCredentialsWithTwitterEngine: _engine delegate: self];
 	
+    NSLog(@"username: %@", _engine.username);
+     //self.send.Username = _engine.username;
+    
+    //TEST THIS NOW!! TODO TODO
      self.send = [[SendTweetView alloc] initWithNibName:@"SendTweetView" bundle:nil];
+    self.send.Username = _engine.username;
     
 	if (controller) 
 		[self presentModalViewController: controller animated: YES];
@@ -106,14 +113,18 @@
             }
         }
         
-        else
+        else {
             [myPrefs setObject:_engine.username forKey:@"username"];
+            //[myPrefs synchronize];
+        }
         
         //sends a tweet if was all updated. Disable for now
 		//[_engine sendUpdate: [NSString stringWithFormat: @"Already Updated. %@", [NSDate date]]];
         
         // Make a friend
         //[_engine enableUpdatesFor:@"mynewfriend"];
+        
+        [myPrefs synchronize];
 	}
 
 }
@@ -134,6 +145,7 @@
     
     else
     {
+        NSLog(@"Username: %@", _engine.username);
         self.send.Username = _engine.username;
         self.send._engine = _engine;
         

@@ -38,13 +38,14 @@
     self.title = @"The Friends Ring";
     // Do any additional setup after loading the view from its nib.
     
+    //TEST THIS
     /*NSString *someText = @"I downloaded FollowersRing from the App Store by @alpascual.";
     SHKItem *item = [SHKItem text:someText];
     
     // Share the item    
     [SHKTwitter shareItem:item];*/
     
-    if ( Username == nil || Username.length == 0 )
+    /*if ( Username == nil || Username.length == 0 )
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                         message:[NSString stringWithFormat:@"You need to set up a twitter user"]
@@ -55,7 +56,7 @@
         [alert show];
         
         return;
-    }
+    }*/
     
     
     user.text = Username;
@@ -89,9 +90,9 @@
 - (IBAction)sendTweetPressed
 {
     // Send Tweet
-    if ( user.text.length == 0 )
-        return;
-        
+//    if ( user.text.length == 0 )
+//        return;
+//        
     //send/message?sUsername=mytest&sMessage=Hello
     //TODO Message text needs to be encoded for the url
     /*NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/friends/AddUser?TwitterUsername=%@&TwitterPassword=%@", user.text, @"none"];
