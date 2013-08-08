@@ -18,7 +18,7 @@
     UIActivityIndicatorView *activity;
     UIProgressView *progress;
     UILabel *progressLabel;
-    NSMutableArray *allUsers;
+    
     
     NSTimer *levelTimer;
     NSInteger pos;
@@ -31,5 +31,6 @@
 @property (nonatomic,strong) IBOutlet UIProgressView *progress;
 @property (nonatomic,strong) IBOutlet UILabel *progressLabel;
 @property (nonatomic,strong) NSString *user;
+@property (nonatomic,strong) NSMutableArray *allUsers;
 
 @end

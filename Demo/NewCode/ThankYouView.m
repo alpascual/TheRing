@@ -45,7 +45,7 @@
     [self.activity startAnimating];
     
     // Parse the request
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://tweet.alsandbox.us/friends/list"]];
+    /*NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://tweet.alsandbox.us/friends/list"]];
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     NSString *get = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
     
@@ -64,6 +64,15 @@
             [allUsers addObject:t];
         }
     }
+     */
+    
+    self.allUsers = [[NSMutableArray alloc] init];
+    PFQuery *query = [PFQuery queryWithClassName:@"friends"];
+    [query whereKeyExists:@"username"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        [self.allUsers addObjectsFromArray:objects];
+    }];
     
    
     pos = 0;
@@ -78,16 +87,16 @@
 	
     // Make a new friend, update the screen and check if needs to stop  
     
-    progressLabel.text = [[NSString alloc] initWithFormat:@"Processing %d of %d", pos +1, [allUsers count]];
+    progressLabel.text = [[NSString alloc] initWithFormat:@"Processing %d of %d", pos +1, [self.allUsers count]];
     
-    if ( pos < allUsers.count )
+    if ( pos < self.allUsers.count )
     {
-        double magic = pos / allUsers.count;
+        double magic = pos / self.allUsers.count;
         
         progress.progress = magic;
         
         // TODO make friend
-        NSString *newFriend = [allUsers objectAtIndex:pos];
+        NSString *newFriend = [self.allUsers objectAtIndex:pos];
         if ( self.engine != nil)
             [self.engine enableUpdatesFor:newFriend];
         
@@ -100,13 +109,18 @@
         [levelTimer invalidate];
         
         // Adding it into the database        
-        NSString *makeRequest = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/friends/AddUser?TwitterUsername=%@&TwitterPassword=%@", user, @"none"];
+        /*NSString *makeRequest = [[NSString alloc] initWithFormat:@"http://tweet.alsandbox.us/friends/AddUser?TwitterUsername=%@&TwitterPassword=%@", user, @"none"];
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:makeRequest]];
         NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
         NSString *get = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
         
         NSLog(@"Response adding into list %@", get );
+         */
         
+        // Save the username
+        PFObject *bigObject = [PFObject objectWithClassName:@"friends"];
+        [bigObject setObject:user forKey:@"username"];
+        [bigObject save];
         
         // TODO let the user know is over
         progress.progress = 1.0;

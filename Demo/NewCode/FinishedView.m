@@ -47,14 +47,22 @@
     
     // request list of followers
     // grab a count
+    // Old API
+    /*
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://tweet.alsandbox.us/friends/count"]];
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     NSString *get = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
     
     NSLog(@"Response adding into list %@", get );
-    
-    
+     
     self.friendCounter.text = [[NSString alloc] initWithFormat:@"- There are %@ number of members right now", get];
+     */
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"friends"];
+    [query whereKeyExists:@"username"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        self.friendCounter.text = [[NSString alloc] initWithFormat:@"- There are %d number of members right now", objects.count];
+    }];
 }
 
 - (void)viewDidUnload

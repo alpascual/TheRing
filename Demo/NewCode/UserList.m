@@ -36,7 +36,8 @@
     [super viewDidLoad];
 
     // grab a count
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://tweet.alsandbox.us/friends/list"]];
+    // Old API
+    /*NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://tweet.alsandbox.us/friends/list"]];
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     NSString *get = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
     
@@ -55,9 +56,17 @@
         {
             [self.Userlist addObject:t];
         }
-    }
+    }*/
     
 
+    self.Userlist = [[NSMutableArray alloc] init];
+    PFQuery *query = [PFQuery queryWithClassName:@"friends"];
+    [query whereKeyExists:@"username"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        
+        [self.Userlist addObjectsFromArray:objects];
+        [self.tableView reloadData];
+    }];
     
 }
 
@@ -119,10 +128,10 @@
     
     NSUInteger row = [indexPath row]; 
     
-    NSString *anObject = [self.Userlist objectAtIndex:row];
+    PFObject *anObject = [self.Userlist objectAtIndex:row];
     NSLog(@"object in %d is %@", row, anObject);
     
-    cell.textLabel.text = anObject;
+    cell.textLabel.text = [anObject objectForKey:@"username"];
     
     NSLog(@"Returning cell");
     
