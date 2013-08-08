@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+
 #import "UserList.h"
 
 @interface FinishedView : UIViewController
@@ -20,9 +22,9 @@
 }
 
 @property (nonatomic) NSInteger repeat;
-@property (nonatomic,retain) IBOutlet UILabel *repeatLabel;
-@property (nonatomic,retain) IBOutlet UILabel *friendCounter;
-@property (nonatomic,retain) UserList *list;
+@property (nonatomic,strong) IBOutlet UILabel *repeatLabel;
+@property (nonatomic,strong) IBOutlet UILabel *friendCounter;
+@property (nonatomic,strong) UserList *list;
 
 - (IBAction)listPressed:(id)sender;
 

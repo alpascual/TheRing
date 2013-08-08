@@ -44,6 +44,7 @@
     
     self.title = @"The Friends Ring";
     
+    
     // request list of followers
     // grab a count
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://tweet.alsandbox.us/friends/count"]];
@@ -52,7 +53,6 @@
     
     NSLog(@"Response adding into list %@", get );
     
-    [get release];
     
     self.friendCounter.text = [[NSString alloc] initWithFormat:@"- There are %@ number of members right now", get];
 }
@@ -72,7 +72,7 @@
 
 - (IBAction)listPressed:(id)sender
 {
-    self.list = [[[UserList alloc] initWithNibName:@"UserList" bundle:nil] autorelease];
+    self.list = [[UserList alloc] initWithNibName:@"UserList" bundle:nil];
         
     [self.navigationController pushViewController:self.list animated:YES];
 }

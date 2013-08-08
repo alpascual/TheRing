@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 #import "SA_OAuthTwitterController.h"
+#import "MGTwitterEngine.h"
+
 #import "FinishedView.h"
 
 @interface ThankYouView : UIViewController
 {
-    SA_OAuthTwitterEngine *_engine;
-    
     UIActivityIndicatorView *activity;
     UIProgressView *progress;
     UILabel *progressLabel;
@@ -25,10 +25,11 @@
     NSString *user;
 }
 
-@property (nonatomic,retain) SA_OAuthTwitterEngine *_engine;
-@property (nonatomic,retain) IBOutlet UIActivityIndicatorView *activity;
-@property (nonatomic,retain) IBOutlet UIProgressView *progress;
-@property (nonatomic,retain) IBOutlet UILabel *progressLabel;
-@property (nonatomic,retain) NSString *user;
+//@property (nonatomic,retain) SA_OAuthTwitterEngine *engine;
+@property (nonatomic,strong) MGTwitterEngine *engine;
+@property (nonatomic,strong) IBOutlet UIActivityIndicatorView *activity;
+@property (nonatomic,strong) IBOutlet UIProgressView *progress;
+@property (nonatomic,strong) IBOutlet UILabel *progressLabel;
+@property (nonatomic,strong) NSString *user;
 
 @end

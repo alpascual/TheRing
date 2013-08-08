@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @class OAuthTwitterDemoViewController;
 
@@ -15,8 +16,8 @@
     OAuthTwitterDemoViewController *viewController;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet OAuthTwitterDemoViewController *viewController;
+@property (nonatomic, strong) IBOutlet UIWindow *window;
+@property (nonatomic, strong) IBOutlet OAuthTwitterDemoViewController *viewController;
 
 @end
 

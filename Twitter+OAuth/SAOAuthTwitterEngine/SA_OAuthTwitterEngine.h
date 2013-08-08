@@ -38,8 +38,8 @@
 	OAToken		*_accessToken; 
 }
 
-@property (nonatomic, readwrite, retain) NSString *consumerSecret, *consumerKey;
-@property (nonatomic, readwrite, retain) NSURL *requestTokenURL, *accessTokenURL, *authorizeURL;				//you shouldn't need to touch these. Just in case...
+@property (nonatomic, readwrite, strong) NSString *consumerSecret, *consumerKey;
+@property (nonatomic, readwrite, strong) NSURL *requestTokenURL, *accessTokenURL, *authorizeURL;				//you shouldn't need to touch these. Just in case...
 @property (nonatomic, readonly) BOOL OAuthSetup;
 
 + (SA_OAuthTwitterEngine *) OAuthTwitterEngineWithDelegate: (NSObject *) delegate;
@@ -55,8 +55,8 @@
 - (void) requestRequestToken;
 - (void) clearAccessToken;
 
-@property (nonatomic, readwrite, retain)  NSString	*pin;
-@property (nonatomic, readonly) NSURLRequest *authorizeURLRequest;
-@property (nonatomic, readonly) OAConsumer *consumer;
+@property (nonatomic, readwrite, strong)  NSString	*pin;
+@property (weak, nonatomic, readonly) NSURLRequest *authorizeURLRequest;
+@property (weak, nonatomic, readonly) OAConsumer *consumer;
 
 @end

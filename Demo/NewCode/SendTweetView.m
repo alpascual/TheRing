@@ -68,7 +68,6 @@
     
     NSLog(@"Response adding into list %@", get );
     
-    [get release];
     
     self.countUsers.text = [[NSString alloc] initWithFormat:@"- There are %@ number of members right now", get];
     
@@ -105,7 +104,7 @@
     [myRequestString release];*/
     
     ThankYouView *thanks = [[ThankYouView alloc] initWithNibName:@"ThankYouView" bundle:nil];
-    thanks._engine = self._engine;
+    thanks.engine = self._engine;
     thanks.user = user.text;
     
     [self.navigationController pushViewController:thanks animated:YES];

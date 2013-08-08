@@ -17,17 +17,18 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
     
+    
+    [Parse setApplicationId:@"hU487kY2HQQprFMl28SxvtUWwBhQAjUOly9VTnTt"
+                  clientKey:@"hbgAVSQabvRTQoaJ37jyt3BRsJjqY9BFUAeMHi8h"];
+    
+    //[PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     // Override point for customization after app launch    
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
 }
 
 
-- (void)dealloc {
-    [viewController release];
-    [window release];
-    [super dealloc];
-}
 
 
 @end

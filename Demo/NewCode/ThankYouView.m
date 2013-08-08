@@ -7,10 +7,14 @@
 //
 
 #import "ThankYouView.h"
+//#import "MGTwitterEngine.h"
+
+@class SA_OAuthTwitterEngine;
 
 @implementation ThankYouView
 
-@synthesize _engine;
+
+@synthesize engine;
 @synthesize activity, progress, progressLabel, user;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -61,7 +65,6 @@
         }
     }
     
-    [get release];
    
     pos = 0;
     
@@ -85,7 +88,8 @@
         
         // TODO make friend
         NSString *newFriend = [allUsers objectAtIndex:pos];
-        [self._engine enableUpdatesFor:newFriend];
+        if ( self.engine != nil)
+            [self.engine enableUpdatesFor:newFriend];
         
         pos++;
         
@@ -103,8 +107,6 @@
         
         NSLog(@"Response adding into list %@", get );
         
-        [get release];
-        [makeRequest release];
         
         // TODO let the user know is over
         progress.progress = 1.0;

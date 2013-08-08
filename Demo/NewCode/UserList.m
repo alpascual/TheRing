@@ -45,7 +45,7 @@
     //Parse get to a list of mutable array
     NSRange firstRange = [get rangeOfString:@","];
     
-    self.Userlist = [[[NSMutableArray alloc] init] autorelease];
+    self.Userlist = [[NSMutableArray alloc] init];
     
     if ( firstRange.length > 0 )
     {
@@ -57,7 +57,6 @@
         }
     }
     
-    [get release];
 
     
 }
@@ -115,7 +114,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     NSUInteger row = [indexPath row]; 

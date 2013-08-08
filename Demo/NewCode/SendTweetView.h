@@ -24,11 +24,11 @@
 }
 
 
-@property (nonatomic,retain) IBOutlet UILabel *user;
-@property (nonatomic,retain) IBOutlet UIButton *send;
-@property (nonatomic,retain) NSString *Username;
-@property (nonatomic,retain) SA_OAuthTwitterEngine *_engine;
-@property (nonatomic,retain) IBOutlet UILabel *countUsers;
+@property (nonatomic,strong) IBOutlet UILabel *user;
+@property (nonatomic,strong) IBOutlet UIButton *send;
+@property (nonatomic,strong) NSString *Username;
+@property (nonatomic,strong) SA_OAuthTwitterEngine *_engine;
+@property (nonatomic,strong) IBOutlet UILabel *countUsers;
 @property (nonatomic) NSInteger repeat;
 
 - (IBAction)sendTweetPressed;

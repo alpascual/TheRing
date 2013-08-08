@@ -12,6 +12,6 @@
 {
     NSMutableArray *Userlist;
 }
-@property (nonatomic, retain) NSMutableArray *Userlist;
+@property (nonatomic, strong) NSMutableArray *Userlist;
 
 @end

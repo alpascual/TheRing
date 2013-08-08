@@ -26,10 +26,10 @@
     SendTweetView *send;
 }
 
-@property (nonatomic,retain) IBOutlet UILabel *pleaseWaitLabel;
-@property (nonatomic,retain) IBOutlet UIButton *startButton;
-@property (nonatomic,retain) UINavigationController *navigationController;
-@property (nonatomic,retain) SendTweetView *send;
+@property (nonatomic,strong) IBOutlet UILabel *pleaseWaitLabel;
+@property (nonatomic,strong) IBOutlet UIButton *startButton;
+@property (nonatomic,strong) UINavigationController *navigationController;
+@property (nonatomic,strong) SendTweetView *send;
 
 @end
 

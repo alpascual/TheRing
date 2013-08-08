@@ -28,6 +28,16 @@
 		76AC51F514EDFCA200E96A3C /* IconBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51EC14EDFCA200E96A3C /* IconBig.png */; };
 		76AC51F614EDFCA200E96A3C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51ED14EDFCA200E96A3C /* MainWindow.xib */; };
 		76AC51F714EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76AC51EE14EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib */; };
+		885EA68A17B43AAE00017E4B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EA68917B43AAE00017E4B /* Parse.framework */; };
+		885EA68C17B43B6B00017E4B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EA68B17B43B6B00017E4B /* AudioToolbox.framework */; };
+		885EA68E17B43B7000017E4B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EA68D17B43B7000017E4B /* CFNetwork.framework */; };
+		885EA69017B43B7D00017E4B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EA68F17B43B7D00017E4B /* CoreLocation.framework */; };
+		885EA69217B43B8300017E4B /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EA69117B43B8300017E4B /* libz.1.1.3.dylib */; };
+		885EA69417B43B8C00017E4B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EA69317B43B8C00017E4B /* MobileCoreServices.framework */; };
+		885EA69617B43B9600017E4B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EA69517B43B9600017E4B /* QuartzCore.framework */; };
+		885EA69817B43B9B00017E4B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EA69717B43B9B00017E4B /* Security.framework */; };
+		885EA69A17B43BA100017E4B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EA69917B43BA100017E4B /* StoreKit.framework */; };
+		885EA69C17B43BA600017E4B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EA69B17B43BA600017E4B /* SystemConfiguration.framework */; };
 		B539A9ED1019C58200401088 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B539A9EC1019C58200401088 /* libxml2.dylib */; };
 		B54ED4A41135F10F0095DD71 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B54ED4791135F10F0095DD71 /* MGTwitterEngine.m */; };
 		B54ED4A51135F10F0095DD71 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B54ED47D1135F10F0095DD71 /* MGTwitterHTTPURLConnection.m */; };
@@ -77,8 +87,18 @@
 		76AC51EB14EDFCA200E96A3C /* Icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon512.png; path = Resources/Icon512.png; sourceTree = "<group>"; };
 		76AC51EC14EDFCA200E96A3C /* IconBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconBig.png; path = Resources/IconBig.png; sourceTree = "<group>"; };
 		76AC51ED14EDFCA200E96A3C /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
-		76AC51EE14EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OAuthTwitterDemoViewController.xib; path = Resources/OAuthTwitterDemoViewController.xib; sourceTree = "<group>"; };
+		76AC51EE14EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OAuthTwitterDemoViewController.xib; path = ../Resources/OAuthTwitterDemoViewController.xib; sourceTree = "<group>"; };
 		76AC51EF14EDFCA200E96A3C /* TheRing-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TheRing-Info.plist"; path = "Resources/TheRing-Info.plist"; sourceTree = "<group>"; };
+		885EA68917B43AAE00017E4B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		885EA68B17B43B6B00017E4B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		885EA68D17B43B7000017E4B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		885EA68F17B43B7D00017E4B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		885EA69117B43B8300017E4B /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		885EA69317B43B8C00017E4B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		885EA69517B43B9600017E4B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		885EA69717B43B9B00017E4B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		885EA69917B43BA100017E4B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		885EA69B17B43BA600017E4B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B539A9EC1019C58200401088 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		B54ED4781135F10F0095DD71 /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngine.h; sourceTree = "<group>"; };
 		B54ED4791135F10F0095DD71 /* MGTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterEngine.m; sourceTree = "<group>"; };
@@ -145,12 +165,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885EA69C17B43BA600017E4B /* SystemConfiguration.framework in Frameworks */,
+				885EA69A17B43BA100017E4B /* StoreKit.framework in Frameworks */,
+				885EA69817B43B9B00017E4B /* Security.framework in Frameworks */,
+				885EA69617B43B9600017E4B /* QuartzCore.framework in Frameworks */,
+				885EA69417B43B8C00017E4B /* MobileCoreServices.framework in Frameworks */,
+				885EA69217B43B8300017E4B /* libz.1.1.3.dylib in Frameworks */,
+				885EA69017B43B7D00017E4B /* CoreLocation.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				885EA68E17B43B7000017E4B /* CFNetwork.framework in Frameworks */,
+				885EA68C17B43B6B00017E4B /* AudioToolbox.framework in Frameworks */,
 				76A3062E14099380009D40D4 /* iAd.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				B539A9ED1019C58200401088 /* libxml2.dylib in Frameworks */,
 				B5BC2313101A63F2009820BB /* libOAuth.a in Frameworks */,
+				885EA68A17B43AAE00017E4B /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,14 +198,24 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				885EA69B17B43BA600017E4B /* SystemConfiguration.framework */,
+				885EA69917B43BA100017E4B /* StoreKit.framework */,
+				885EA69717B43B9B00017E4B /* Security.framework */,
+				885EA69517B43B9600017E4B /* QuartzCore.framework */,
+				885EA69317B43B8C00017E4B /* MobileCoreServices.framework */,
+				885EA69117B43B8300017E4B /* libz.1.1.3.dylib */,
+				885EA68F17B43B7D00017E4B /* CoreLocation.framework */,
+				885EA68D17B43B7000017E4B /* CFNetwork.framework */,
+				885EA68B17B43B6B00017E4B /* AudioToolbox.framework */,
 				760EDA131609688600A98F56 /* Default-568h@2x.png */,
+				885EA68917B43AAE00017E4B /* Parse.framework */,
 				76A3062D14099380009D40D4 /* iAd.framework */,
+				B5901B87101A291A00CF32FA /* Code */,
 				76A3061E14098D5C009D40D4 /* NewCode */,
 				B5901B08101A280800CF32FA /* Twitter+OAuth */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				B5901B87101A291A00CF32FA /* Code */,
 				B539A9EC1019C58200401088 /* libxml2.dylib */,
 			);
 			name = CustomTemplate;
@@ -191,7 +231,6 @@
 				76AC51EB14EDFCA200E96A3C /* Icon512.png */,
 				76AC51EC14EDFCA200E96A3C /* IconBig.png */,
 				76AC51ED14EDFCA200E96A3C /* MainWindow.xib */,
-				76AC51EE14EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib */,
 				76AC51EF14EDFCA200E96A3C /* TheRing-Info.plist */,
 			);
 			name = Resources;
@@ -313,6 +352,7 @@
 				B5901B8B101A291A00CF32FA /* OAuthTwitterDemoAppDelegate.m */,
 				B5901B8C101A291A00CF32FA /* OAuthTwitterDemoViewController.h */,
 				B5901B8D101A291A00CF32FA /* OAuthTwitterDemoViewController.m */,
+				76AC51EE14EDFCA200E96A3C /* OAuthTwitterDemoViewController.xib */,
 				B5901B88101A291A00CF32FA /* main.m */,
 				B5901B89101A291A00CF32FA /* TheRing_Prefix.pch */,
 			);
@@ -441,8 +481,13 @@
 					armv6,
 					armv7,
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -451,7 +496,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Resources/TheRing-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../OAuthConsumer-iPhone/build/Debug-iphoneos\"",
@@ -475,14 +520,19 @@
 					armv6,
 					armv7,
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Src/TheRing_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Resources/TheRing-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../OAuthConsumer-iPhone/build/Debug-iphoneos\"",
@@ -517,16 +567,21 @@
 					armv6,
 					armv7,
 				);
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Src/TheRing_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Resources/TheRing-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../OAuthConsumer-iPhone/build/Debug-iphoneos\"",

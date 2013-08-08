@@ -77,10 +77,6 @@
 
 //=============================================================================================================================
 #pragma mark ViewController Stuff
-- (void)dealloc {
-	[_engine release];
-    [super dealloc];
-}
 - (void) viewDidAppear: (BOOL)animated {
 	if (_engine) return;
 	_engine = [[SA_OAuthTwitterEngine alloc] initOAuthWithDelegate: self];
@@ -133,7 +129,7 @@
 {   
     if ( self.send.repeat == 1 )
     {
-        [self.send release];
+        self.send;
         
         //Go to a view and say is done.
         FinishedView *finish = [[FinishedView alloc] initWithNibName:@"FinishedView" bundle:nil];
