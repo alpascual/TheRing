@@ -62,14 +62,20 @@
     user.text = Username;
     
     // grab a count
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://tweet.alsandbox.us/friends/count"]];
+    /*NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://tweet.alsandbox.us/friends/count"]];
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     NSString *get = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
     
     NSLog(@"Response adding into list %@", get );
-    
-    
+     
     self.countUsers.text = [[NSString alloc] initWithFormat:@"- There are %@ number of members right now", get];
+    */
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"friends"];
+    [query whereKeyExists:@"username"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        self.countUsers.text = [[NSString alloc] initWithFormat:@"- There are %d number of members right now", objects.count];
+    }];
     
 }
 
