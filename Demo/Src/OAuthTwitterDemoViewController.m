@@ -111,7 +111,7 @@
         
         else {
             [myPrefs setObject:_engine.username forKey:@"username"];
-            //[myPrefs synchronize];
+            [myPrefs synchronize];
         }
         
         //sends a tweet if was all updated. Disable for now
