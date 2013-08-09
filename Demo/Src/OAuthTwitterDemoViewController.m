@@ -129,8 +129,6 @@
 {   
     if ( self.send.repeat == 1 )
     {
-        self.send;
-        
         //Go to a view and say is done.
         FinishedView *finish = [[FinishedView alloc] initWithNibName:@"FinishedView" bundle:nil];
         finish.repeat = 1;

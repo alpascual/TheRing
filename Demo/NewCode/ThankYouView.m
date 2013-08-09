@@ -117,10 +117,23 @@
         NSLog(@"Response adding into list %@", get );
          */
         
-        // Save the username
-        PFObject *bigObject = [PFObject objectWithClassName:@"friends"];
-        [bigObject setObject:user forKey:@"username"];
-        [bigObject save];
+        // Save user in the list if doesn't exist
+        PFQuery *query = [PFQuery queryWithClassName:@"friends"];
+        [query whereKey:@"username" equalTo:user];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            
+            // Not found, save
+            if ( objects.count == 0 ) {
+                PFObject *bigObject = [PFObject objectWithClassName:@"friends"];
+                [bigObject setObject:user forKey:@"username"];
+                [bigObject save];
+            }
+ 
+        }];
+        
+            // Save the username
+        
+        
         
         // TODO let the user know is over
         progress.progress = 1.0;
@@ -129,7 +142,17 @@
         
         //Go to a view and say is done.
         FinishedView *finish = [[FinishedView alloc] initWithNibName:@"FinishedView" bundle:nil];
-        [self.navigationController pushViewController:finish animated:YES];
+        if ( self.navigationController == nil ) {
+            self.navigationController = [[UINavigationController alloc] initWithRootViewController:finish];
+            
+            [self.view.window addSubview: [self.navigationController view]];
+            [self.view.window makeKeyAndVisible];
+        }
+
+        else
+            [self.navigationController pushViewController:finish animated:YES];
+        
+        
         
     }
 }

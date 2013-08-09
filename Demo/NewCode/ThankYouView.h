@@ -32,5 +32,6 @@
 @property (nonatomic,strong) IBOutlet UILabel *progressLabel;
 @property (nonatomic,strong) NSString *user;
 @property (nonatomic,strong) NSMutableArray *allUsers;
+@property (nonatomic,strong) UINavigationController *navigationController;
 
 @end
