@@ -1136,7 +1136,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Resources/TheRing-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../OAuthConsumer-iPhone/build/Debug-iphoneos\"",
@@ -1172,7 +1172,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Resources/TheRing-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../OAuthConsumer-iPhone/build/Debug-iphoneos\"",
@@ -1221,7 +1221,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
 				INFOPLIST_FILE = "Resources/TheRing-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../OAuthConsumer-iPhone/build/Debug-iphoneos\"",

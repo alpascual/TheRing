@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B86CD677-C782-420D-B40F-ECC5939E67EB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TheRing</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0BFF0B0C-B75E-4FF2-9930-E4AA93CF8D4E</key>
+		<string>https://github.com/alpascual/TheRing.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Demo/TheRing.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0BFF0B0C-B75E-4FF2-9930-E4AA93CF8D4E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/alpascual/TheRing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0BFF0B0C-B75E-4FF2-9930-E4AA93CF8D4E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0BFF0B0C-B75E-4FF2-9930-E4AA93CF8D4E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TheRing</string>
+		</dict>
+	</array>
+</dict>
+</plist>
